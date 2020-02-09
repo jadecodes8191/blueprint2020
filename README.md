@@ -6,6 +6,7 @@ Non-ML (Java) version:
 
 Machine Learning (Python) version:
 This version of the code imports various libraries to scrape memes from the subreddit r/memes, read the words from within the images, train a machine learning model on the words, and generate new captions for memes. (We did not have time to add the captions back on to images)
+
 Resources Used/Imported:
 - PRAW (to scrape memes from Reddit)
 - OpenCV (to read words from within images)
