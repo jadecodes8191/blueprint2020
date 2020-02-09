@@ -10,8 +10,8 @@ IMG_PATH = r"C:\Users\jacksonmerg\Desktop\memes\code\file.jpg"
 
 file=open(IMG_PATH, 'wb+')
 file2=open("dataset.txt","a+")
-reddit = praw.Reddit(client_id='FOEla3xjFOCxmQ',
-                     client_secret='lOdapodqo1swz81g4FpP5_nCsUM',
+reddit = praw.Reddit(client_id='',
+                     client_secret='',
                      user_agent='spicymemelord')
 memes=reddit.subreddit("memes")
 for meme in memes.new():
