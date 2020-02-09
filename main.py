@@ -8,6 +8,4 @@ pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
 img = cv2.imread(IMG_PATH)
 
 text = pytesseract.image_to_string(img)
-print(text)
-
-
+print(text
