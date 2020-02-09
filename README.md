@@ -20,7 +20,7 @@ This software was used to make an auto-twitter-posting program
 We used software called Sharex to find the pixels for the AHK program
 
 Twitter
-	-We used twitter to post our 👌spicy memes 👌
+	-We used twitter to post our spicy memes
  
 RedditThe Rest of the internet
 For our memes
