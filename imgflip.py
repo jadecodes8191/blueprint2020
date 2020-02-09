@@ -15,15 +15,15 @@ reddit = praw.Reddit(client_id='FOEla3xjFOCxmQ',
                      user_agent='spicymemelord')
 memes=reddit.subreddit("memes")
 for meme in memes.new():
-    resp = requests.get(meme.url, stream=True)
-    file=open(IMG_PATH, 'wb+')
-    print(meme.url)
-    if resp.ok:
-        resp.raw.decode_content=True
-        shutil.copyfileobj(resp.raw,file)
-        pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
-        img = cv2.imread(IMG_PATH)
-        text=pytesseract.image_to_string(img)
-        print("<|startoftext|>"+text+"<|endoftext|>")
-        del img
-    file.close()
+	if not meme.is_self:
+		resp = requests.get(meme.url, stream=True)
+		file=open(IMG_PATH, 'wb+')
+		if resp.ok:
+			resp.raw.decode_content=True
+			shutil.copyfileobj(resp.raw,file)
+			pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+			img = cv2.imread(IMG_PATH)
+			text=pytesseract.image_to_string(img)
+			print("<|startoftext|>"+text+"<|endoftext|>")
+			del img
+		file.close()
