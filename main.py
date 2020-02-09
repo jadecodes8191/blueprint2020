@@ -1,8 +1,8 @@
 import cv2
 import pytesseract
 
-TESSERACT_PATH = r'C:\Users\jadaf\AppData\Local\Tesseract-OCR\tesseract.exe'
-IMG_PATH = "C:\\Users\\jadaf\\Downloads\\testimage.jpg"
+TESSERACT_PATH = r''
+IMG_PATH = ""
 
 pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
 img = cv2.imread(IMG_PATH)
