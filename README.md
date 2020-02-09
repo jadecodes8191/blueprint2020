@@ -13,6 +13,7 @@ Resources Used/Imported:
 - GPT2-Simple (to train the language model and generate captions -- not only did we use this library, we learned how to do so by looking at the examples on the Github repo (https://github.com/minimaxir/gpt-2-simple) 
 - Google Colaboratory (to increase the speed of training)
 - Better Profanity (to censor inappropriate words from the memes)
+- JSON Requests
 
 Link to Working Version of ML Model:
 https://colab.research.google.com/drive/1cxa_ANrbskhSsMySbulFctl2K5PT7yse
